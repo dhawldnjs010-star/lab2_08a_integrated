@@ -1,0 +1,3 @@
+﻿VCD info: dumpfile wave.vcd opened for output.
+LAB2_INTEGRATED_PASS modes=8 checks=2848
+C:\Users\djawl\lab2_integrated\sim\tb_lab2_integrated.sv:129: $finish called at 34326000 (1ps)

@@ -1,0 +1,4 @@
+﻿VCD info: dumpfile wave.vcd opened for output.
+LAB2_INTEGRATED_FAIL counter increments once time=346000
+FATAL: C:\Users\djawl\lab2_integrated\sim\tb_lab2_integrated.sv:23: check failed
+       Time: 346000  Scope: tb_lab2_integrated.check
