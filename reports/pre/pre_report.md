@@ -1,6 +1,6 @@
 # 실험 전 레포트: LAB2-08A 8모드 버튼·LCD 통합
 
-작성자: 상혁 (2025440084) / 작성일: 2026-09-21 / 소스 커밋: `__HASH__` / workspace: `LAB1.code-workspace` (템플릿 v2.0.1) / OS: `Windows 11 Home 10.0.26200` / Python: `Python 3.14.7` / 시뮬레이터: Icarus Verilog `12.0 (devel) (s20150603-1539-g2693dd32b)`
+작성자: 상혁 (2025440084) / 작성일: 2026-09-21 / 소스 커밋: `687f77f` / workspace: `LAB1.code-workspace` (템플릿 v2.0.1) / OS: `Windows 11 Home 10.0.26200` / Python: `Python 3.14.7` / 시뮬레이터: Icarus Verilog `12.0 (devel) (s20150603-1539-g2693dd32b)`
 
 ## 1. 목적과 예상 동작
 
@@ -149,9 +149,9 @@ LAB2 01–08에서 만든 여덟 순차회로를 하나의 프로젝트(`lab2_in
 
 | 단계 | 소스 커밋 또는 해시 | 실행 폴더·로그 링크 | 입력·기대값·실제값 | 해석 |
 |---|---|---|---|---|
-| 정상 코드 | `__HASH__` | [normal.log](../../evidence/pre/lab2_integrated_normal.log) | `LAB2_INTEGRATED_PASS modes=8 checks=2848`, `$finish called at 34326000 (1ps)` | 모든 검사 통과, 34326 ns 종료 |
-| 지정한 RTL 변경 | 미커밋 수정본(`__HASH__` 기준, 로컬 실행) | [mod.log](../../evidence/pre/lab2_integrated_mod.log) | 346 ns 기대 `led=01`, 실제 `led=02`. `LAB2_INTEGRATED_FAIL counter increments once time=346000`, `FATAL: sim/tb_lab2_integrated.sv:23: check failed` | 첫 카운터 검사가 변경을 발견(로그의 time은 ps, 346000 ps = 346 ns) |
-| 원래 코드로 복구 | `__HASH__` | [recover.log](../../evidence/pre/lab2_integrated_recover.log) | 복구 후 전체 검사 재실행. `LAB2_INTEGRATED_PASS modes=8 checks=2848`, `$finish called at 34326000 (1ps)` | PASS와 종료 시각이 정상 실행과 같음 |
+| 정상 코드 | `687f77f` | [normal.log](../../evidence/pre/lab2_integrated_normal.log) | `LAB2_INTEGRATED_PASS modes=8 checks=2848`, `$finish called at 34326000 (1ps)` | 모든 검사 통과, 34326 ns 종료 |
+| 지정한 RTL 변경 | 미커밋 수정본(`687f77f` 기준, 로컬 실행) | [mod.log](../../evidence/pre/lab2_integrated_mod.log) | 346 ns 기대 `led=01`, 실제 `led=02`. `LAB2_INTEGRATED_FAIL counter increments once time=346000`, `FATAL: sim/tb_lab2_integrated.sv:23: check failed` | 첫 카운터 검사가 변경을 발견(로그의 time은 ps, 346000 ps = 346 ns) |
+| 원래 코드로 복구 | `687f77f` | [recover.log](../../evidence/pre/lab2_integrated_recover.log) | 복구 후 전체 검사 재실행. `LAB2_INTEGRATED_PASS modes=8 checks=2848`, `$finish called at 34326000 (1ps)` | PASS와 종료 시각이 정상 실행과 같음 |
 
 ## 5. 보드 실험 계획 (Vivado)
 
